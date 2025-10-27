@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Branding Studio</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="logo">IRIS DESIGN</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#offer">What I Offer</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Design That Shapes Identity</h1>
+      <p class="tagline">Strategic visual branding for your product</p>
+      <a href="#contact" class="cta-btn">Let's Build Your Brand</a>
+    </div>
+    <span class="scroll-down">&#8595;</span>
+  </section>
+
+  <!-- WHAT I OFFER -->
+<section id="offer" class="services">
+  <h2>What I Offer</h2>
+  <div class="section-divider">
+  <div class="icon-wrapper">
+    <span>✨</span>
+  </div>
+</div>
+  <p class="offer-intro">
+I provide tailored branding services that combine creativity with strategic thinking. Whether you need a logo, a full visual identity, or standout packaging, I’ll help you build a brand that feels right and looks unforgettable.
+</p>
+  <div class="cards">
+<div class="card">
+  <img src="a2.jpg" alt="Logo Design">
+</div>
+<div class="card">
+  <img src="a1.jpg" alt="Visual Identity">
+</div>
+<div class="card">
+  <img src="packaging.jpg" alt="Packaging Design">
+</div>
+  </div>
+  <p class="service-note">Your brand. Your story. Designed right.</p>
+</section>
+  <section class="process">
+  <h2>My Process</h2>
+
+  <div class="steps">
+    <div class="step">
+      <span>1</span>
+      <h3>Discovery</h3>
+      <p>Understanding your brand, goals and audience.</p>
+    </div>
+    <div class="step">
+      <span>2</span>
+      <h3>Concept</h3>
+      <p>Developing the creative direction and visual ideas.</p>
+    </div>
+    <div class="step">
+      <span>3</span>
+      <h3>Design</h3>
+      <p>Bringing the identity to life with style and structure.</p>
+    </div>
+    <div class="step">
+      <span>4</span>
+      <h3>Deliver</h3>
+      <p>Handing off everything you need, ready to use.</p>
+    </div>
+</section>
+
+ <section id="about" class="about">
+  <div class="about-flex">
+    <div class="about-photo">
+      <img src="iris.jpg" alt="About Image">
+      </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I’m a branding designer passionate about creating powerful visual identities. With a strategic and clean approach, I help businesses tell their story through design that lasts.</p>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="gallery">
+  <h2 class="my-work-title">My Work</h2>
+  <div class="gallery-grid">
+    <img src="iris6.jpg" alt="Work 1" />
+    <img src="iris3.jpg" alt="Work 2" />
+    <img src="iris4.jpg" alt="Work 3" />
+    <img src="iris5.jpg" alt="Work 4" />
+</section>
+</section>
+</body>
+  <section class="clients">
+  <h2>Who I Help</h2>
+  <div class="client-types">
+    <div class="type">Startup Owners</div>
+    <div class="type">Small Business Founders</div>
+    <div class="type">Beauty & Fashion Brands</div>
+    <div class="type">Coaches & Personal Brands</div>
+  </div>
+</section>
+<hr class="zajedna-linija">
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Iris Design. All rights reserved.</p>
+  </footer>
+
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.hero-content', { delay: 200, duration: 1200, origin: 'bottom', distance: '50px' });
+  ScrollReveal().reveal('.card', { delay: 200, duration: 1000, origin: 'bottom', distance: '40px', interval: 200 });
+  ScrollReveal().reveal('.about-text', { delay: 300, duration: 1000, origin: 'left', distance: '60px' });
+  ScrollReveal().reveal('.contact form', { delay: 300, duration: 1000, origin: 'right', distance: '60px' });
+</script>
+</html>
