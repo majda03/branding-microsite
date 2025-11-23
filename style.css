@@ -26,7 +26,173 @@ a {
   top: 0;
   z-index: 1000;
 }
+/* ===== GLOBALNO: spriječi horizontalni skrol ===== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+/* ===== MOBITEL: popravka layouta ispod 768px širine ===== */
+@media (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* NAV – da stane fino gore */
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  /* HERO – naslov i dugme manji, centrirani */
+  .hero {
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.9rem !important;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* SVE SEKCIJE – normalan padding */
+  .services,
+  .process,
+  .about,
+  .gallery,
+  .clients,
+  .contact {
+    padding: 60px 16px;
+  }
+
+  /* KARTICE (What I Offer) */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin: 0;
+  }
+
+  .card img {
+    height: auto;
+  }
+
+  /* ABOUT – fotka i tekst jedan ispod drugog */
+  .about-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .about-photo img,
+  .about img {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-text {
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* GALLERY – jedan stupac, bez ludih margina */
+  .gallery {
+    margin-top: 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-left: 0;
+    margin-top: 24px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  .my-work-title,
+  .gallery h2.my-work-title {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.8rem !important;
+  }
+
+  /* CLIENTS – bez margin-left: 1090px i sl. */
+  .clients h2 {
+    margin: 0 0 24px 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .client-types {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .client-types .type {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  /* PROCESS – blokovi jedan ispod drugog */
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  /* TEKSTOVI – malo manji */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
 .logo {
   font-weight: bold;
   font-size: 1.3rem;
@@ -968,5 +1134,6 @@ img {
         line-height: 1.6;
     }
 }
+
 
 
