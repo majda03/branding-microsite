@@ -1134,6 +1134,120 @@ img {
         line-height: 1.6;
     }
 }
+/* ===== MOBITEL: IRIS + MY WORK + CLIENTS ===== */
+@media (max-width: 768px) {
+
+  /* da nema ludog vodoravnog skrola */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* NAV – da se spusti u dva reda */
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  /* HERO tekst da bude čitljiv */
+  .hero {
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  /* ABOUT – IRIS FOTKA I TEKST */
+  .about {
+    padding: 60px 16px;
+  }
+
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .about-photo img {
+    margin: 0 auto 10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .about-text {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  /* MY WORK – NASLOV + GALERIJA */
+  .gallery {
+    margin-top: 40px;
+    padding: 40px 16px;
+  }
+
+  .my-work-title {
+    padding-left: 0;
+    text-align: center;
+    margin: 0 0 24px;
+    font-size: 1.8rem !important;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;      /* 1 kolona na mobu */
+    gap: 20px;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    max-width: 320px;                /* da ne iskače preko ekrana */
+    height: auto;
+  }
+
+  /* CLIENTS – da ne bježi u desno */
+  .clients {
+    background: #0a0a0a;
+    padding: 60px 16px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .clients h2 {
+    margin: 0 0 24px !important;
+  }
+
+  .client-types {
+    margin: 16px auto 0;
+    width: 100%;
+    max-width: 320px;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .type {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
 
