@@ -906,3 +906,66 @@ img, video {
         line-height: 1.6;
     }
 }
+/* ===== GLOBALNO: nema horizontalnog skrolanja ===== */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* slike da nikad ne iskoče van ekrana */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== MOBITEL: popravi layout ispod 768px širine ===== */
+@media (max-width: 768px) {
+
+    /* glavni layout (promijeni/ubaci klase koje imaš) */
+    main,
+    .page,
+    .wrapper,
+    .container,
+    .content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    /* ako imaš neki “dva stupca” layout */
+    .row,
+    .columns,
+    .flex-row,
+    .hero-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* meni da bude ljepši na mobitelu (nije obavezno) */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* naslovi malo manji */
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
